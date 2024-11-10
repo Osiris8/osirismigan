@@ -17,7 +17,7 @@ export default function Experience() {
           {/* Daisy UI avatar */}
           <div className="avatar">
             <div className="w-16 h-16 rounded-full mr-2">
-              <Image src={sens} alt="Company Logo" className="bg-cover" />
+              <Image src={sens} alt="Company Logo" className="object-cover" />
             </div>
           </div>
           {/* Daisy UI avatar */}
@@ -32,19 +32,25 @@ export default function Experience() {
                 {isOpen ? "Hide details" : "View details"}
               </p>
 
-              {/* Affichage conditionnel de la description */}
-              {isOpen && (
-                <p className="mt-2 text-gray-700">
+              {/* Display detail and animation */}
+              <div
+                className={`mt-2 text-gray-700 transition-all duration-500 ease-in-out ${
+                  isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+                } overflow-hidden`}
+              >
+                <p>
                   Voici les détails de la description. Cliquez à nouveau pour
                   fermer. Voici les détails de la description. Cliquez à nouveau
                   pour fermer.
                 </p>
-              )}
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="text-sm text-gray-500 text-right ml-2">Date</div>
+        <div className="text-sm text-gray-500 text-right ml-2 whitespace-nowrap">
+          March 2020 - May 2022
+        </div>
       </div>
     </div>
   );

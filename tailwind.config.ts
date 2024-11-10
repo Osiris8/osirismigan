@@ -1,6 +1,7 @@
-import type { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
-export default {
+const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +15,51 @@ export default {
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [daisyui],
+  daisyui: {
+    themes: [
+      {
+        monochrome: {
+          primary: "#171717", // neutral-900
+          "primary-focus": "#262626", // neutral-800
+          "primary-content": "#fafafa", // neutral-50
+
+          secondary: "#404040", // neutral-700
+          "secondary-focus": "#525252", // neutral-600
+          "secondary-content": "#f5f5f5", // neutral-100
+
+          accent: "#262626", // neutral-800
+          "accent-focus": "#404040", // neutral-700
+          "accent-content": "#fafafa", // neutral-50
+
+          neutral: "#171717", // neutral-900
+          "neutral-focus": "#262626", // neutral-800
+          "neutral-content": "#fafafa", // neutral-50
+
+          "base-100": "#ffffff", // white
+          "base-200": "#f5f5f5", // neutral-100
+          "base-300": "#e5e5e5", // neutral-200
+          "base-content": "#171717", // neutral-900
+
+          info: "#737373", // neutral-500
+          success: "#262626", // neutral-800
+          warning: "#404040", // neutral-700
+          error: "#171717", // neutral-900
+
+          "--rounded-box": "0.5rem",
+          "--rounded-btn": "0.3rem",
+          "--rounded-badge": "0.25rem",
+
+          "--animation-btn": "0.2s",
+          "--animation-input": "0.2s",
+
+          "--btn-text-case": "uppercase",
+          "--navbar-padding": "1rem",
+          "--border-btn": "2px",
+        },
+      },
+    ],
+  },
+};
+
+export default config;

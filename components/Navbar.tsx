@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100">
@@ -24,14 +26,14 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Experience</a>
+              <Link href="#experience">Experience</Link>
             </li>
 
             <li>
-              <a>Projects</a>
+              <Link href="#project">Projects</Link>
             </li>
             <li>
-              <a>Education</a>
+              <Link href="#education">Education</Link>
             </li>
           </ul>
         </div>
@@ -40,19 +42,21 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Experience</a>
+            <Link href="#experience">Experience</Link>
           </li>
 
           <li>
-            <a>Projects</a>
+            <Link href="#project">Projects</Link>
           </li>
           <li>
-            <a>Education</a>
+            <Link href="#education">Education</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary">Contact</a>
+        <Link href="mailto:miganosiris8@gmail.com" className="btn btn-primary">
+          Contact
+        </Link>
       </div>
     </div>
   );

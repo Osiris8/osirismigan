@@ -1,7 +1,7 @@
 export default function Project() {
   return (
-    <div className="container max-w-3xl mx-auto p-6 text-center">
-      <h2 className="text-3xl mb-6 font-bold">Projects</h2>
+    <div className="container max-w-3xl mx-auto p-6">
+      <h2 className="text-3xl mb-6 font-bold text-center">Projects</h2>
       <div className="flex justify-center flex-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="card card-compact bg-base-100 w-80 shadow-xl m-2">
@@ -12,10 +12,16 @@ export default function Project() {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
+              <h2 className="card-title text-left">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
+              <div className="flex flex-wrap">
+                <div className="badge m-2 bg-base-300">Next.js</div>
+                <div className="badge m-2 bg-base-300">Typescript</div>
+                <div className="badge m-2 bg-base-300">MongoDB</div>
+              </div>
+              <div className="card-actions justify-start">
                 <button className="btn btn-primary">Buy Now</button>
+                <button className="btn btn-secondary">Buy Now</button>
               </div>
             </div>
           </div>
@@ -30,8 +36,14 @@ export default function Project() {
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
+              <div className="flex flex-wrap">
+                <div className="badge m-2 bg-base-300">Next.js</div>
+                <div className="badge m-2 bg-base-300">Typescript</div>
+                <div className="badge m-2 bg-base-300">MongoDB</div>
+              </div>
+              <div className="card-actions justify-start">
                 <button className="btn btn-primary">Buy Now</button>
+                <button className="btn btn-secondary">Buy Now</button>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import sens from "@/public/images/sens.png";
 
 export default function Education() {
   return (
-    <div className="container max-w-3xl mx-auto p-6 text-center">
+    <div className="container max-w-3xl mx-auto p-6 text-center" id="education">
       <h2 className="text-3xl mb-6 font-bold">Education</h2>
       <div className="flex flex-row justify-between">
         <div className="flex ">

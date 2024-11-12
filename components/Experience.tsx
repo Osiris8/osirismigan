@@ -10,7 +10,10 @@ export default function Experience() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="container max-w-3xl mx-auto p-6  text-center">
+    <div
+      className="container max-w-3xl mx-auto p-6  text-center"
+      id="experience"
+    >
       <h2 className="text-3xl mb-6 font-bold">Work Experience</h2>
       <div className="flex flex-row justify-between">
         <div className="flex ">

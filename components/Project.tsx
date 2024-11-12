@@ -1,3 +1,5 @@
+import { ExternalLink, Github } from "lucide-react";
+
 export default function Project() {
   return (
     <div className="container max-w-3xl mx-auto p-6">
@@ -20,8 +22,14 @@ export default function Project() {
                 <div className="badge m-2 bg-base-300">MongoDB</div>
               </div>
               <div className="card-actions justify-start">
-                <button className="btn btn-primary">Buy Now</button>
-                <button className="btn btn-secondary">Buy Now</button>
+                <button className="btn btn-primary">
+                  <Github />
+                  View Code
+                </button>
+                <button className="btn border-slate-300">
+                  <ExternalLink />
+                  Live Demo
+                </button>
               </div>
             </div>
           </div>
@@ -42,8 +50,14 @@ export default function Project() {
                 <div className="badge m-2 bg-base-300">MongoDB</div>
               </div>
               <div className="card-actions justify-start">
-                <button className="btn btn-primary">Buy Now</button>
-                <button className="btn btn-secondary">Buy Now</button>
+                <button className="btn btn-primary">
+                  <Github />
+                  View Code
+                </button>
+                <button className="btn border-slate-300">
+                  <ExternalLink />
+                  Live Demo
+                </button>
               </div>
             </div>
           </div>
@@ -57,8 +71,15 @@ export default function Project() {
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+              <div className="card-actions justify-start">
+                <button className="btn btn-primary">
+                  <Github />
+                  View Code
+                </button>
+                <button className="btn border-slate-300">
+                  <ExternalLink />
+                  Live Demo
+                </button>
               </div>
             </div>
           </div>
@@ -72,8 +93,15 @@ export default function Project() {
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+              <div className="card-actions justify-start">
+                <button className="btn btn-primary">
+                  <Github />
+                  View Code
+                </button>
+                <button className="btn border-slate-300">
+                  <ExternalLink />
+                  Live Demo
+                </button>
               </div>
             </div>
           </div>

@@ -1,60 +1,103 @@
 "use client";
-import Image from "next/image";
-import sens from "@/public/images/sens.png";
+import Image, { StaticImageData } from "next/image";
+import seemarket from "@/public/images/seemarket.png";
+import oc from "@/public/images/oc.png";
+import hbo from "@/public/images/hbo.png";
 import { useState } from "react";
-export default function Experience() {
-  const [isOpen, setIsOpen] = useState(false);
 
-  // Fonction pour changer l'état lors du clic
-  const toggleDetails = () => {
-    setIsOpen(!isOpen);
+export default function Experience() {
+  // Initial State 'number | null'
+  const [stateIsOpen, setStateIsOpen] = useState<number | null>(null);
+
+  // Change the state when it's cliqued
+  const toggleDetails = (index: number) => {
+    setStateIsOpen(stateIsOpen === index ? null : index); // If the same index, close this experience
   };
+
+  interface ExperienceType {
+    company: string;
+    role: string;
+    logo: StaticImageData; // Type for Next.js Images
+    dates: string;
+    details: string;
+  }
+
+  const experiences: ExperienceType[] = [
+    {
+      company: "Hello Booster",
+      role: "Software Engineer",
+      logo: hbo,
+      dates: "Jan 2022 - Today",
+      details:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate ipsam aperiam quod atque illum ullam hic quisquam, dolor quos quaerat, veniam cumque et nobis odit quam doloremque deleniti nulla.",
+    },
+    {
+      company: "OpenClassrooms",
+      role: "Web Developer Mentor",
+      logo: oc,
+      dates: "Jan 2021 - Today",
+      details:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempora culpa delectus voluptate sapiente sunt cum sequi dolore! Debitis molestiae dolor perspiciatis nemo quibusdam voluptas, sed aspernatur eaque vel.",
+    },
+    {
+      company: "SeeMarket",
+      role: "Software Engineer",
+      logo: seemarket,
+      dates: "May 2023 - Dec 2023",
+      details:
+        "Develop seemarket's website using Wordpress (https://www.see-markets.com/). Develop the mobile application using React Native.",
+    },
+  ];
+
   return (
     <div
       className="container max-w-3xl mx-auto p-6  text-center"
       id="experience"
     >
       <h2 className="text-3xl mb-6 font-bold">Work Experience</h2>
-      <div className="flex flex-row justify-between">
-        <div className="flex ">
-          {/* Daisy UI avatar */}
-          <div className="avatar">
-            <div className="w-16 h-16 rounded-full mr-2">
-              <Image src={sens} alt="Company Logo" className="object-cover" />
+      {experiences.map((exp, index) => (
+        <div key={index} className="flex flex-row justify-between mb-6">
+          <div className="flex">
+            {/* Daisy UI avatar */}
+            <div className="avatar">
+              <div className="w-16 h-16 rounded-full mr-2 overflow-hidden">
+                <Image
+                  src={exp.logo}
+                  alt={`${exp.company} Logo`}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
-          </div>
-          {/* Daisy UI avatar */}
-          <div className="flex flex-col text-left">
-            <h4 className="text-xl font-semibold">Hello Booster</h4>
-            <h5 className="text-md text-gray-600">Software Engineer</h5>
-            <div>
-              <p
-                className="text-sm text-blue-500 cursor-pointer"
-                onClick={toggleDetails}
-              >
-                {isOpen ? "Hide details" : "View details"}
-              </p>
-
-              {/* Display detail and animation */}
-              <div
-                className={`mt-2 text-gray-700 transition-all duration-500 ease-in-out ${
-                  isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-                } overflow-hidden`}
-              >
-                <p>
-                  Voici les détails de la description. Cliquez à nouveau pour
-                  fermer. Voici les détails de la description. Cliquez à nouveau
-                  pour fermer.
+            {/* Daisy UI avatar */}
+            <div className="flex flex-col text-left">
+              <h4 className="text-xl font-semibold">{exp.company}</h4>
+              <h5 className="text-md text-gray-600">{exp.role}</h5>
+              <div>
+                <p
+                  className="text-sm text-blue-500 cursor-pointer"
+                  onClick={() => toggleDetails(index)}
+                >
+                  {stateIsOpen === index ? "Hide details" : "View details"}
                 </p>
+
+                {/* Display details and animation */}
+                <div
+                  className={`mt-2 text-gray-700 transition-all duration-500 ease-in-out ${
+                    stateIsOpen === index
+                      ? "max-h-screen opacity-100"
+                      : "max-h-0 opacity-0"
+                  } overflow-hidden`}
+                >
+                  <p>{exp.details}</p>
+                </div>
               </div>
             </div>
           </div>
+          <div className="text-sm text-gray-500 text-right ml-2 whitespace-nowrap">
+            {exp.dates}
+          </div>
         </div>
-
-        <div className="text-sm text-gray-500 text-right ml-2 whitespace-nowrap">
-          March 2020 - May 2022
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

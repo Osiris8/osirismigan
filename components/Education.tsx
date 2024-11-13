@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import sens from "@/public/images/sens.png";
+import unstim from "@/public/images/unstim.png";
 
 export default function Education() {
   return (
@@ -11,7 +11,7 @@ export default function Education() {
           {/* Daisy UI avatar */}
           <div className="avatar">
             <div className="w-16 h-16 rounded-full mr-2">
-              <Image src={sens} alt="Company Logo" className="object-cover" />
+              <Image src={unstim} alt="Company Logo" className="object-cover" />
             </div>
           </div>
           {/* Daisy UI avatar */}

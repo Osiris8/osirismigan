@@ -1,9 +1,9 @@
 import { ExternalLink, Github } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import allocoach from "@/public/images/allocoach.png";
 import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
+import Link from "next/link";
 
 // Définition de l'interface Project
 interface ProjectType {
@@ -21,7 +21,7 @@ export default function Project() {
     {
       title: "OpenTranscriptAI",
       description:
-        "[OpentranscriptAI](https://www.opentranscriptai.com/) is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to provide fast, accurate transcriptions, enabling you to make the most of your audiovisual content.",
+        "OpentranscriptAI is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to provide fast, accurate transcriptions, enabling you to make the most of your audiovisual content.",
       imageUrl: opentranscriptai, // Pas d'image fournie, donc vide
       badges: [
         "Next.js",
@@ -51,16 +51,7 @@ export default function Project() {
       imageUrl: allavo, // Pas d'image fournie, donc vide
       badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
       codeLink: "", // Pas de lien de code fourni
-      demoLink: "https://osirismigan.com/",
-    },
-    {
-      title: "Allocoach",
-      description: "Connecting entrepreneurs with business advisors.",
-      imageUrl: allocoach, // Pas d'image fournie, donc vide
-      badges: ["Laravel", "Bootstrap"],
-      codeLink: "", // Pas de lien de code fourni
-      demoLink:
-        "https://files.edgestore.dev/vgd5z5zx1hzcip0s/publicFiles/_public/05f4f9dd-cb91-4a7f-b327-66dec5a8340e.webm",
+      demoLink: "https://www.makossoallavo.com/",
     },
   ];
 
@@ -92,14 +83,27 @@ export default function Project() {
                   ))}
                 </div>
                 <div className="card-actions justify-start">
-                  <button className="btn btn-primary">
-                    <Github />
-                    View Code
-                  </button>
-                  <button className="btn border-slate-300">
-                    <ExternalLink />
-                    Live Demo
-                  </button>
+                  {project.codeLink && (
+                    <Link
+                      href={project.codeLink}
+                      className="btn btn-primary"
+                      target="_blank"
+                    >
+                      <Github />
+                      View Code
+                    </Link>
+                  )}
+
+                  {project.demoLink && (
+                    <Link
+                      href={project.demoLink}
+                      className="btn border-slate-300"
+                      target="_blank"
+                    >
+                      <ExternalLink />
+                      Live Demo
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

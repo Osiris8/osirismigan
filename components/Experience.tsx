@@ -27,7 +27,7 @@ export default function Experience() {
       company: "Hello Booster",
       role: "Software Engineer",
       logo: hbo,
-      dates: "Jan 2022 - Today",
+      dates: "Jan 2019 - Today",
       details:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate ipsam aperiam quod atque illum ullam hic quisquam, dolor quos quaerat, veniam cumque et nobis odit quam doloremque deleniti nulla.",
     },
@@ -45,7 +45,7 @@ export default function Experience() {
       logo: seemarket,
       dates: "May 2023 - Dec 2023",
       details:
-        "Develop seemarket's website using Wordpress (https://www.see-markets.com/). Develop the mobile application using React Native.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident earum, repellat praesentium est sit temporibus quibusdam quas labore repellendus animi placeat ipsum ducimus, deserunt nesciunt aperiam optio tenetur rerum.",
     },
   ];
 

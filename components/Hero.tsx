@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="hero bg-base-100 min-h-screen">
@@ -8,7 +10,12 @@ export default function Hero() {
             Hi, I will happy to work with you. L&#39;ets build your next project
             !
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link
+            href={"mailto:miganosiris8@gmail.com"}
+            className="btn btn-primary"
+          >
+            Get Started
+          </Link>
         </div>
       </div>
     </div>

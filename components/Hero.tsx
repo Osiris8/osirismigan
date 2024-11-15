@@ -5,10 +5,10 @@ export default function Hero() {
     <div className="hero bg-base-100 min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-6xl font-bold">Starting Build Anythings</h1>
+          <h1 className="text-6xl font-bold">Start building anything</h1>
           <p className="py-6 text-xl">
-            Hi, I will happy to work with you. L&#39;ets build your next project
-            !
+            Hi, I will happy to working with you. Let&#39;s start by building
+            your next project !
           </p>
           <Link
             href={"mailto:miganosiris8@gmail.com"}

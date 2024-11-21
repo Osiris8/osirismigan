@@ -7,8 +7,8 @@ export default function Hero() {
         <div className="max-w-md">
           <h1 className="text-6xl font-bold">Start building anything</h1>
           <p className="py-6 text-xl">
-            Hi, I will happy to working with you. Let&#39;s start by building
-            your next project !
+            Hi, I will be happy to work with you. Let’s begin by creating your
+            next project!
           </p>
           <Link
             href={"mailto:miganosiris8@gmail.com"}

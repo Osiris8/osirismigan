@@ -21,7 +21,7 @@ export default function Project() {
     {
       title: "OpenTranscriptAI",
       description:
-        "OpentranscriptAI is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to provide fast, accurate transcriptions, enabling you to make the most of your audiovisual content.",
+        "OpentranscriptAI is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to deliver fast and accurate transcriptions, helping you make the most of your audiovisual content.",
       imageUrl: opentranscriptai, // Pas d'image fournie, donc vide
       badges: [
         "Next.js",
@@ -38,7 +38,7 @@ export default function Project() {
     {
       title: "Hiretop",
       description:
-        "Connecting talent to opportunity. Find your next career opportunity. Stand out from the crowd and boost your career with Hiretop.",
+        "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
       imageUrl: hiretop, // Pas d'image fournie, donc vide
       badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
       codeLink: "https://github.com/Osiris8/hiretop.git",
@@ -47,7 +47,7 @@ export default function Project() {
     {
       title: "Makosso Allavo",
       description:
-        "Creation of makosso allavo's personal website, Design engineer in food technology.",
+        "Creation of the personal website for Makosso Allavo, Food Technology Engineer.",
       imageUrl: allavo, // Pas d'image fournie, donc vide
       badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
       codeLink: "", // Pas de lien de code fourni

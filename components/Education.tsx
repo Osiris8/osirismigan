@@ -17,7 +17,7 @@ export default function Education() {
           {/* Daisy UI avatar */}
           <div className="flex flex-col text-left">
             <h4 className="text-xl font-semibold">
-              National University of Science, Technology, Engineering and
+              National University of Science, Technology, Engineering, and
               Mathematics
             </h4>
             <h5 className="text-md text-gray-600">Bachelor Degree</h5>

@@ -1,7 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import seemarket from "@/public/images/seemarket.png";
-import oc from "@/public/images/oc.png";
+import youtube from "@/public/images/youtube.png";
 import hbo from "@/public/images/hbo.png";
 import { useState } from "react";
 
@@ -24,21 +24,22 @@ export default function Experience() {
 
   const experiences: ExperienceType[] = [
     {
-      company: "Hello Booster",
+      company: "Youtube",
       role: "Software Engineer",
-      logo: hbo,
-      dates: "Jan 2019 - Today",
-      details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate ipsam aperiam quod atque illum ullam hic quisquam, dolor quos quaerat, veniam cumque et nobis odit quam doloremque deleniti nulla.",
-    },
-    {
-      company: "OpenClassrooms",
-      role: "Web Developer Mentor",
-      logo: oc,
-      dates: "Jan 2021 - Today",
+      logo: youtube,
+      dates: "Jan 2023 - Today",
       details:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempora culpa delectus voluptate sapiente sunt cum sequi dolore! Debitis molestiae dolor perspiciatis nemo quibusdam voluptas, sed aspernatur eaque vel.",
     },
+    {
+      company: "Hello Booster",
+      role: "Software Engineer",
+      logo: hbo,
+      dates: "Jan 2019 - Dec 2022",
+      details:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate ipsam aperiam quod atque illum ullam hic quisquam, dolor quos quaerat, veniam cumque et nobis odit quam doloremque deleniti nulla.",
+    },
+
     {
       company: "SeeMarket",
       role: "Software Engineer",

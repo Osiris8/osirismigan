@@ -35,10 +35,7 @@ export default function Footer() {
         </div>
       </nav>
       <aside>
-        <p>
-          Copyright © {new Date().getFullYear()} - All right reserved by Osiris
-          MIGAN
-        </p>
+        <p>Copyright © {new Date().getFullYear()}</p>
       </aside>
     </footer>
   );

@@ -1,8 +1,8 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import seemarket from "@/public/images/seemarket.png";
-import youtube from "@/public/images/youtube.png";
-import hbo from "@/public/images/hbo.png";
+import oc from "@/public/images/OC.png";
+import sens from "@/public/images/sens.png";
 import { useState } from "react";
 
 export default function Experience() {
@@ -20,33 +20,38 @@ export default function Experience() {
     logo: StaticImageData; // Type for Next.js Images
     dates: string;
     details: string;
+    url: string;
   }
 
   const experiences: ExperienceType[] = [
     {
-      company: "Youtube",
+      company: "SENS",
       role: "Software Engineer",
-      logo: youtube,
-      dates: "Jan 2023 - Today",
-      details:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tempora culpa delectus voluptate sapiente sunt cum sequi dolore! Debitis molestiae dolor perspiciatis nemo quibusdam voluptas, sed aspernatur eaque vel.",
-    },
-    {
-      company: "Hello Booster",
-      role: "Software Engineer",
-      logo: hbo,
+      logo: sens,
       dates: "Jan 2019 - Dec 2022",
       details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate ipsam aperiam quod atque illum ullam hic quisquam, dolor quos quaerat, veniam cumque et nobis odit quam doloremque deleniti nulla.",
+        "Development of showcase site for young entrepreneurs. Responsible for digital technology training for entrepreneurs, business idea holders and students. Advisor on digital tools to use in the workplace. Digital project manager",
+      url: "https://solidarites-entreprises.org/site/",
+    },
+
+    {
+      company: "OpenClassrooms",
+      role: "Web Developer Mentor",
+      logo: oc,
+      dates: "Jan 2020 - Today",
+      details:
+        "Support students by analyzing their needs and adapting teaching methods accordingly. Offer perspectives on the profession of web developer and monitor students' motivation to give their best. Monitor learners' progress and alert them to any delays. Helping students to defend their projects.",
+      url: "https://openclassrooms.com/fr/",
     },
 
     {
       company: "SeeMarket",
       role: "Software Engineer",
       logo: seemarket,
-      dates: "May 2023 - Dec 2023",
+      dates: "Jan 2023 - Dec 2023",
       details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem provident earum, repellat praesentium est sit temporibus quibusdam quas labore repellendus animi placeat ipsum ducimus, deserunt nesciunt aperiam optio tenetur rerum.",
+        "Develop seemarket's website. Develop the mobile application using React Native.",
+      url: "https://www.see-markets.com/",
     },
   ];
 
@@ -71,7 +76,11 @@ export default function Experience() {
             </div>
             {/* Daisy UI avatar */}
             <div className="flex flex-col text-left">
-              <h4 className="text-xl font-semibold">{exp.company}</h4>
+              <h4 className="text-xl font-semibold">
+                <a className="link link-hover" href={exp.url} target="_blank">
+                  {exp.company}
+                </a>
+              </h4>
               <h5 className="text-md text-gray-600">{exp.role}</h5>
               <div>
                 <p

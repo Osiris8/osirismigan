@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
+import soccerApp from "@/public/images/soccer-app.png";
 import Link from "next/link";
 
 // Définition de l'interface Project
@@ -18,6 +19,22 @@ interface ProjectType {
 export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
+    {
+      title: "Soccer App",
+      description:
+        "Modern plateform to post and to see the details of your football player. Create and deploy Soccer App, a full CRUD application that lets users add, update, and delete football players.",
+      imageUrl: soccerApp, // Pas d'image fournie, donc vide
+      badges: [
+        "Next.js",
+        "Typescript",
+
+        "TailwindCSS",
+        "Kinde Authentification",
+        "Shadcn UI",
+      ],
+      codeLink: "https://github.com/Osiris8/player-app", // Lien vers le code source supposé
+      demoLink: "https://www.youtube.com/watch?v=txeTcmivwuY&t=99s",
+    },
     {
       title: "OpenTranscriptAI",
       description:

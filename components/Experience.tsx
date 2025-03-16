@@ -1,8 +1,8 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import seemarket from "@/public/images/seemarket.png";
+import seemarket1 from "@/public/images/seemarket1.png";
 import oc from "@/public/images/OC.png";
-import sens from "@/public/images/sens.png";
+import sens1 from "@/public/images/sens1.png";
 import { useState } from "react";
 
 export default function Experience() {
@@ -27,7 +27,7 @@ export default function Experience() {
     {
       company: "SENS",
       role: "Software Engineer",
-      logo: sens,
+      logo: sens1,
       dates: "Jan 2019 - Dec 2022",
       details:
         "Development of showcase site for young entrepreneurs. Responsible for digital technology training for entrepreneurs, business idea holders and students. Advisor on digital tools to use in the workplace. Digital project manager",
@@ -47,7 +47,7 @@ export default function Experience() {
     {
       company: "SeeMarket",
       role: "Software Engineer",
-      logo: seemarket,
+      logo: seemarket1,
       dates: "Jan 2023 - Dec 2023",
       details:
         "Develop seemarket's website. Develop the mobile application using React Native.",

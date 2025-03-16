@@ -116,7 +116,7 @@ export default function Project() {
                   {project.demoLink && (
                     <Link
                       href={project.demoLink}
-                      className="btn border-slate-900 font-bold"
+                      className="btn border-slate-900"
                       target="_blank"
                     >
                       <ExternalLink />

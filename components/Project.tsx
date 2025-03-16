@@ -90,7 +90,9 @@ export default function Project() {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-left">{project.title}</h2>
+                <h2 className="card-title text-left text-xl font-bold">
+                  {project.title}
+                </h2>
                 <p>{project.description}</p>
                 <div className="flex flex-wrap">
                   {project.badges.map((badge, badgeIndex) => (
@@ -103,7 +105,7 @@ export default function Project() {
                   {project.codeLink && (
                     <Link
                       href={project.codeLink}
-                      className="btn btn-primary"
+                      className="btn btn-primary border-slate-300"
                       target="_blank"
                     >
                       <Github />
@@ -114,7 +116,7 @@ export default function Project() {
                   {project.demoLink && (
                     <Link
                       href={project.demoLink}
-                      className="btn border-slate-300"
+                      className="btn border-slate-900 font-bold"
                       target="_blank"
                     >
                       <ExternalLink />

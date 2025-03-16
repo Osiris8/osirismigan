@@ -84,7 +84,7 @@ export default function Experience() {
               <h5 className="text-md text-gray-600">{exp.role}</h5>
               <div>
                 <p
-                  className="text-sm text-blue-500 cursor-pointer"
+                  className="text-sm text-primary cursor-pointer"
                   onClick={() => toggleDetails(index)}
                 >
                   {stateIsOpen === index ? "Hide details" : "View details"}

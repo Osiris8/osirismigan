@@ -2,7 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
-import hiretop from "@/public/images/hiretop.png";
+import hiretop2 from "@/public/images/hiretop2.png";
 import soccerApp from "@/public/images/soccer-app.png";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ export default function Project() {
       title: "Hiretop",
       description:
         "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
-      imageUrl: hiretop, // Pas d'image fournie, donc vide
+      imageUrl: hiretop2, // Pas d'image fournie, donc vide
       badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
       codeLink: "https://github.com/Osiris8/hiretop.git",
       demoLink: "https://hiretop-iota.vercel.app",

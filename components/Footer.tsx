@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Youtube } from "lucide-react";
+import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -31,6 +31,9 @@ export default function Footer() {
             target="_blank"
           >
             <Linkedin />
+          </Link>
+          <Link href="https://github.com/Osiris8" target="_blank">
+            <Github />
           </Link>
         </div>
       </nav>

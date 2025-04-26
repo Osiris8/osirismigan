@@ -4,6 +4,7 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop2 from "@/public/images/hiretop2.png";
 import soccerApp from "@/public/images/soccer-app.png";
+import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 
 // Définition de l'interface Project
@@ -19,6 +20,22 @@ interface ProjectType {
 export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
+    {
+      title: "Todofy App",
+      description:
+        "Backend API with Next.js App Router, Drizzle ORM, and Neon database. complete CRUD API for a Todo app, test it with Postman, write clean API documentation using Tailwind CSS and DaisyUI, and deploy everything on Vercel.",
+      imageUrl: todofyApp,
+      badges: [
+        "Next.js",
+        "Typescript",
+        "Drizzle ORM",
+        "TailwindCSS",
+        "Daisy UI",
+        "Neon Database",
+      ],
+      codeLink: "https://github.com/Osiris8/todofy", // Lien vers le code source supposé
+      demoLink: "https://todofy-omega.vercel.app/",
+    },
     {
       title: "Soccer App",
       description:

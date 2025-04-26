@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop2 from "@/public/images/hiretop2.png";
-import soccerApp from "@/public/images/soccer-app.png";
+import playerApp from "@/public/images/player-app.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 
@@ -40,7 +40,7 @@ export default function Project() {
       title: "Soccer App",
       description:
         "Modern plateform to post and to see the details of your football player. Create and deploy Soccer App, a full CRUD application that lets users add, update, and delete football players.",
-      imageUrl: soccerApp, // Pas d'image fournie, donc vide
+      imageUrl: playerApp, // Pas d'image fournie, donc vide
       badges: [
         "Next.js",
         "Typescript",

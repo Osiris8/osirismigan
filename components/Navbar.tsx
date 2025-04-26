@@ -1,3 +1,4 @@
+import { Github, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -54,6 +55,12 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
+        <a href="https://github.com/Osiris8" target="_blank">
+          <Github className="mr-4" />
+        </a>
+        <a href="https://www.youtube.com/@javascriptpractice" target="_blank">
+          <Youtube className="mr-4" />
+        </a>
         <Link href="mailto:miganosiris8@gmail.com" className="btn btn-primary">
           Contact
         </Link>

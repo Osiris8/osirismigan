@@ -4,6 +4,7 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop2 from "@/public/images/hiretop2.png";
 import playerApp from "@/public/images/player-app.png";
+import milo from "@/public/images/milo.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 
@@ -20,6 +21,22 @@ interface ProjectType {
 export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
+    {
+      title: "Milo FullStack AI App",
+      description:
+        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more.",
+      imageUrl: milo,
+      badges: [
+        "Python",
+        "Flask",
+        "Neon Database",
+        "React",
+        "Daisy UI",
+        "Postman",
+      ],
+      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      demoLink: "https://milo-beta.vercel.app/",
+    },
     {
       title: "Todofy App",
       description:

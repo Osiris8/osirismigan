@@ -35,7 +35,7 @@ export default function Project() {
         "Postman",
       ],
       codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
-      demoLink: "https://milo-beta.vercel.app/",
+      demoLink: "https://milo-brown.vercel.app/login",
     },
     {
       title: "Todofy App",

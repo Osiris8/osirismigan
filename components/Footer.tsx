@@ -20,10 +20,7 @@ export default function Footer() {
           <Link href="https://x.com/migan_osiris" target="_blank">
             <Twitter />
           </Link>
-          <Link
-            href="https://www.youtube.com/@javascriptpractice"
-            target="_blank"
-          >
+          <Link href="https://www.youtube.com/@codewithosiris" target="_blank">
             <Youtube />
           </Link>
           <Link

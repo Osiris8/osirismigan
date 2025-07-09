@@ -2,7 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
-import hiretop2 from "@/public/images/hiretop2.png";
+import hiretop from "@/public/images/hiretop.png";
 import playerApp from "@/public/images/player-app.png";
 import milo from "@/public/images/milo.png";
 import todofyApp from "@/public/images/todofy.jpg";
@@ -22,22 +22,6 @@ export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
     {
-      title: "Milo FullStack AI App",
-      description:
-        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more.",
-      imageUrl: milo,
-      badges: [
-        "Python",
-        "Flask",
-        "Neon Database",
-        "React",
-        "Daisy UI",
-        "Postman",
-      ],
-      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
-      demoLink: "https://milo-brown.vercel.app/login",
-    },
-    {
       title: "Todofy App",
       description:
         "Backend API with Next.js App Router, Drizzle ORM, and Neon database. complete CRUD API for a Todo app, test it with Postman, write clean API documentation using Tailwind CSS and DaisyUI, and deploy everything on Vercel.",
@@ -54,20 +38,20 @@ export default function Project() {
       demoLink: "https://todofy-omega.vercel.app/",
     },
     {
-      title: "Soccer App",
+      title: "Milo FullStack AI App",
       description:
-        "Modern plateform to post and to see the details of your football player. Create and deploy Soccer App, a full CRUD application that lets users add, update, and delete football players.",
-      imageUrl: playerApp, // Pas d'image fournie, donc vide
+        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
+      imageUrl: milo,
       badges: [
-        "Next.js",
-        "Typescript",
-
-        "TailwindCSS",
-        "Kinde Authentification",
-        "Shadcn UI",
+        "Python",
+        "Flask",
+        "Neon Database",
+        "React",
+        "Daisy UI",
+        "Postman",
       ],
-      codeLink: "https://github.com/Osiris8/player-app", // Lien vers le code source supposé
-      demoLink: "https://www.youtube.com/watch?v=txeTcmivwuY&t=99s",
+      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      demoLink: "https://milo-brown.vercel.app/login",
     },
     {
       title: "OpenTranscriptAI",
@@ -87,10 +71,27 @@ export default function Project() {
       demoLink: "https://www.opentranscriptai.com/",
     },
     {
+      title: "Soccer App",
+      description:
+        "Modern plateform to post and to see the details of your football player. Create and deploy Soccer App, a full CRUD application that lets users add, update, and delete football players.",
+      imageUrl: playerApp, // Pas d'image fournie, donc vide
+      badges: [
+        "Next.js",
+        "Typescript",
+
+        "TailwindCSS",
+        "Kinde Authentification",
+        "Shadcn UI",
+      ],
+      codeLink: "https://github.com/Osiris8/player-app", // Lien vers le code source supposé
+      demoLink: "https://www.youtube.com/watch?v=txeTcmivwuY&t=99s",
+    },
+
+    {
       title: "Hiretop",
       description:
         "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
-      imageUrl: hiretop2, // Pas d'image fournie, donc vide
+      imageUrl: hiretop, // Pas d'image fournie, donc vide
       badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
       codeLink: "https://github.com/Osiris8/hiretop.git",
       demoLink: "https://hiretop-iota.vercel.app",

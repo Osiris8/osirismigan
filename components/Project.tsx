@@ -4,7 +4,8 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
 import playerApp from "@/public/images/player-app.png";
-import milo from "@/public/images/milo.png";
+import frontend from "@/public/images/milo-frontend.png";
+import backend from "@/public/images/milo-backend.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 
@@ -22,6 +23,24 @@ export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
     {
+      title: "Milo Backend App",
+      description:
+        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
+      imageUrl: backend,
+      badges: ["Python", "Flask", "Neon Database", "Render", "Postman"],
+      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      demoLink: "https://milo-brown.vercel.app/login",
+    },
+    {
+      title: "Milo Frontend App",
+      description:
+        "Frontend AI assistant app using React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Deploy everything on Vercel. We connect this Frontend with the Backend",
+      imageUrl: frontend,
+      badges: ["React", "Daisy UI", "Vercel", "Tailwind CSS"],
+      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      demoLink: "https://milo-brown.vercel.app/login",
+    },
+    {
       title: "Todofy App",
       description:
         "Backend API with Next.js App Router, Drizzle ORM, and Neon database. complete CRUD API for a Todo app, test it with Postman, write clean API documentation using Tailwind CSS and DaisyUI, and deploy everything on Vercel.",
@@ -36,22 +55,6 @@ export default function Project() {
       ],
       codeLink: "https://github.com/Osiris8/todofy", // Lien vers le code source supposé
       demoLink: "https://todofy-omega.vercel.app/",
-    },
-    {
-      title: "Milo FullStack AI App",
-      description:
-        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
-      imageUrl: milo,
-      badges: [
-        "Python",
-        "Flask",
-        "Neon Database",
-        "React",
-        "Daisy UI",
-        "Postman",
-      ],
-      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
-      demoLink: "https://milo-brown.vercel.app/login",
     },
     {
       title: "OpenTranscriptAI",

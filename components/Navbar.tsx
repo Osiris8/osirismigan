@@ -36,6 +36,14 @@ export default function Navbar() {
             <li>
               <Link href="#education">Education</Link>
             </li>
+            <li>
+              <Link
+                href="https://learn.deeplearning.ai/accomplishments/54441740-3855-46b3-b99b-187fb4cb4749?usp=sharing"
+                target="_blank"
+              >
+                Certifications
+              </Link>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">Osiris MIGAN</a>
@@ -51,6 +59,14 @@ export default function Navbar() {
           </li>
           <li>
             <Link href="#education">Education</Link>
+          </li>
+          <li>
+            <Link
+              href="https://learn.deeplearning.ai/accomplishments/54441740-3855-46b3-b99b-187fb4cb4749?usp=sharing"
+              target="_blank"
+            >
+              Certifications
+            </Link>
           </li>
         </ul>
       </div>

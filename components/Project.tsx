@@ -118,7 +118,7 @@ export default function Project() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card card-compact bg-base-100 w-80 p-2 m-2 shadow-xl"
+              className="card card-compact bg-base-100 w-75 shadow-xl m-2"
             >
               <figure>
                 <Image
@@ -139,7 +139,7 @@ export default function Project() {
                     </div>
                   ))}
                 </div>
-                <div className="card-actions justify-start">
+                <div className="card-actions justify-between">
                   {project.codeLink && (
                     <Link
                       href={project.codeLink}

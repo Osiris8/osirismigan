@@ -3,18 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
-      <nav className="grid grid-flow-col gap-4">
-        <Link href="#experience" className="link link-hover">
-          Experience
-        </Link>
-        <Link href="#project" className="link link-hover">
-          Projects
-        </Link>
-        <Link href="#education" className="link link-hover">
-          Education
-        </Link>
-      </nav>
+    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <Link href="https://x.com/migan_osiris" target="_blank">
@@ -35,7 +24,7 @@ export default function Footer() {
         </div>
       </nav>
       <aside>
-        <p>Copyright © {new Date().getFullYear()}</p>
+        <p>Copyright © {new Date().getFullYear()} - Osiris MIGAN</p>
       </aside>
     </footer>
   );

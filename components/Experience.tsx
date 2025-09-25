@@ -56,10 +56,7 @@ export default function Experience() {
   ];
 
   return (
-    <div
-      className="container max-w-3xl mx-auto p-6  text-center"
-      id="experience"
-    >
+    <div className="container max-w-2xl mx-auto p-6" id="experience">
       <h2 className="text-3xl mb-6 font-bold">Work Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="flex flex-row justify-between mb-6">

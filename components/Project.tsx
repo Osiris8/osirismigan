@@ -111,14 +111,14 @@ export default function Project() {
   ];
 
   return (
-    <div className="container max-w-3xl mx-auto p-6" id="project">
-      <h2 className="text-3xl mb-6 font-bold text-center">Projects</h2>
+    <div className="container max-w-2xl mx-auto p-6" id="project">
+      <h2 className="text-3xl mb-6 font-bold">Projects</h2>
       <div className="flex justify-center flex-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card card-compact bg-base-100 w-80 shadow-xl m-2"
+              className="card card-compact bg-base-100 w-70 shadow-xl m-2"
             >
               <figure>
                 <Image

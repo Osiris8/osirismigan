@@ -111,17 +111,17 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: "Github",
     icon: Github,
-    link: "",
+    link: "https://github.com/Osiris8",
   },
   {
     label: "Twitter",
     icon: Twitter,
-    link: "",
+    link: "https://x.com/migan_osiris",
   },
   {
     label: "LinkedIn",
     icon: Linkedin,
-    link: "",
+    link: "https://www.linkedin.com/in/osiris-migan/",
   },
 ];
 

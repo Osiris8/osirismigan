@@ -1,5 +1,6 @@
 import { EMAIL, SOCIAL_LINKS } from "@/app/data";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Connect() {
   return (
@@ -13,9 +14,11 @@ export default function Connect() {
       </p>
       <div className="flex items-center justify-start space-x-3">
         {SOCIAL_LINKS.map((link) => (
-          <Link key={link.label} href={link.link}>
-            {link.label}
-          </Link>
+          <Button asChild key={link.label}>
+            <Link href={link.link} target="_blank">
+              {link.label}
+            </Link>
+          </Button>
         ))}
       </div>
     </div>

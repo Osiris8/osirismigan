@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Button } from "./ui/button";
+
 export default function CallToAction() {
   return (
     <div className="container max-w-2xl mx-auto p-6" id="education">
@@ -9,13 +12,9 @@ export default function CallToAction() {
           <div className="flex justify-between items-center">
             <p className="w-96 pr-12">Let’s turn your ideas into reality.</p>
             <div className="justify-end card-actions">
-              <a
-                href="mailto:miganosiris8@gmail.com"
-                className="btn btn-primary"
-                type="button"
-              >
-                Get in touch
-              </a>
+              <Button asChild>
+                <Link href="mailto:miganosiris8@gmail.com">Get in touch</Link>
+              </Button>
             </div>
           </div>
         </div>

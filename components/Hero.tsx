@@ -7,7 +7,8 @@ export default function Hero() {
         <div className="flex flex-col">
           <h1 className="text-5xl">Osiris MIGAN</h1>
           <p className="text-2xl">
-            I'm specialized in Machine Learning, AI and Software Enginieering
+            I&#39;m specialized in Machine Learning, Artificial Intelligence,
+            and Software Engineering
           </p>
         </div>
 

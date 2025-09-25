@@ -118,7 +118,7 @@ export default function Project() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card card-compact bg-base-100 w-70 shadow-xl m-2"
+              className="card card-compact bg-base-100 w-80 p-2 m-2 shadow-xl"
             >
               <figure>
                 <Image

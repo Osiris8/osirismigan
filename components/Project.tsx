@@ -8,6 +8,9 @@ import frontend from "@/public/images/milo-frontend.png";
 import backend from "@/public/images/milo-backend.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import { Card } from "./ui/card";
 
 // Définition de l'interface Project
 interface ProjectType {
@@ -116,7 +119,7 @@ export default function Project() {
       <div className="flex justify-center flex-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
-            <div
+            <Card
               key={index}
               className="card card-compact bg-base-100 w-75 shadow-xl m-2"
             >
@@ -131,39 +134,35 @@ export default function Project() {
                 <h2 className="card-title text-left text-xl font-bold">
                   {project.title}
                 </h2>
-                <p>{project.description}</p>
-                <div className="flex flex-wrap">
+                <p className="text-xs">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
                   {project.badges.map((badge, badgeIndex) => (
-                    <div key={badgeIndex} className="badge m-1 bg-base-300">
+                    <Badge key={badgeIndex} variant="secondary">
                       {badge}
-                    </div>
+                    </Badge>
                   ))}
                 </div>
-                <div className="card-actions justify-between">
+                <div className="flex justify-between">
                   {project.codeLink && (
-                    <Link
-                      href={project.codeLink}
-                      className="btn btn-primary border-slate-300"
-                      target="_blank"
-                    >
-                      <Github />
-                      View Code
-                    </Link>
+                    <Button asChild>
+                      <Link href={project.codeLink} target="_blank">
+                        <Github />
+                        View Code
+                      </Link>
+                    </Button>
                   )}
 
                   {project.demoLink && (
-                    <Link
-                      href={project.demoLink}
-                      className="btn border-slate-900"
-                      target="_blank"
-                    >
-                      <ExternalLink />
-                      Live Demo
-                    </Link>
+                    <Button asChild variant="outline">
+                      <Link href={project.demoLink} target="_blank">
+                        <ExternalLink />
+                        Live Demo
+                      </Link>
+                    </Button>
                   )}
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

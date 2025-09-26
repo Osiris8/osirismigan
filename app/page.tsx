@@ -1,4 +1,5 @@
 import CallToAction from "@/components/CallToAction";
+import Certification from "@/components/Certification";
 import Connect from "@/components/Connect";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Connect />
       <Experience />
+      <Certification />
       <Education />
       <Project />
       <CallToAction />

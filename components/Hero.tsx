@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import osiris from "@/public/images/osiris2.jpg";
 export default function Hero() {
@@ -6,6 +7,8 @@ export default function Hero() {
       <div className="flex justify-between items-center mt-10">
         <div className="flex flex-col">
           <h1 className="text-5xl">Osiris MIGAN</h1>
+          {/*Dark Mode*/}
+
           <p className="text-2xl">
             I&#39;m specialized in Machine Learning, Artificial Intelligence,
             and Software Engineering

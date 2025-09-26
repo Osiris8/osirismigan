@@ -121,7 +121,7 @@ export default function Project() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="card card-compact bg-base-100 w-75 shadow-xl m-2"
+              className="card card-compact bg-base-100 w-75 m-2"
             >
               <figure>
                 <Image
@@ -134,7 +134,7 @@ export default function Project() {
                 <h2 className="card-title text-left text-xl font-bold">
                   {project.title}
                 </h2>
-                <p className="text-xs">{project.description}</p>
+                <p className="text-sm">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.badges.map((badge, badgeIndex) => (
                     <Badge key={badgeIndex} variant="secondary">
@@ -144,7 +144,7 @@ export default function Project() {
                 </div>
                 <div className="flex justify-between">
                   {project.codeLink && (
-                    <Button asChild>
+                    <Button asChild className="m-1">
                       <Link href={project.codeLink} target="_blank">
                         <Github />
                         View Code
@@ -153,7 +153,7 @@ export default function Project() {
                   )}
 
                   {project.demoLink && (
-                    <Button asChild variant="outline">
+                    <Button asChild variant="outline" className="m-1">
                       <Link href={project.demoLink} target="_blank">
                         <ExternalLink />
                         Live Demo

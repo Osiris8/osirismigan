@@ -1,6 +1,7 @@
 import { EMAIL, SOCIAL_LINKS } from "@/app/data";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { ExternalLink } from "lucide-react";
 
 export default function Connect() {
   return (
@@ -16,7 +17,7 @@ export default function Connect() {
         {SOCIAL_LINKS.map((link) => (
           <Button asChild key={link.label}>
             <Link href={link.link} target="_blank">
-              {link.label}
+              {link.label} <ExternalLink />
             </Link>
           </Button>
         ))}

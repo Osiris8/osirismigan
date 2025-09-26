@@ -119,7 +119,7 @@ export default function Project() {
       <div className="flex justify-center flex-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
-            <Card key={index} className="card card-compact w-75 m-2">
+            <Card key={index} className="card bg-white card-compact w-75 m-2">
               <figure>
                 <Image
                   src={project.imageUrl}

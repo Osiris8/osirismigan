@@ -13,7 +13,7 @@ export default function Connect() {
           {EMAIL}
         </a>
       </p>
-      <div className="flex items-center justify-start space-x-3">
+      <div className="flex items-center justify-start space-x-2">
         {SOCIAL_LINKS.map((link) => (
           <Button asChild key={link.label}>
             <Link href={link.link} target="_blank">

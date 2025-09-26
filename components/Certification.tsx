@@ -1,5 +1,3 @@
-import { ExternalLink } from "lucide-react";
-
 export default function Certification() {
   return (
     <div className="container max-w-2xl mx-auto p-6">

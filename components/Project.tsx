@@ -127,7 +127,7 @@ export default function Project() {
                   className="w-full h-full"
                 />
               </figure>
-              <div className="card-body">
+              <div className="card-body bg-white">
                 <h2 className="card-title text-left text-xl font-bold">
                   {project.title}
                 </h2>

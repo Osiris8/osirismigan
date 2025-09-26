@@ -1,5 +1,4 @@
 import { SOCIAL_LINKS } from "@/app/data";
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {

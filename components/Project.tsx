@@ -163,7 +163,7 @@ export default function Project() {
                 </div>
                 <div className="flex justify-between">
                   {project.codeLink && (
-                    <Button asChild className="bg-black m-1">
+                    <Button asChild variant="secondary" className="m-1">
                       <Link
                         href={project.codeLink}
                         target="_blank"

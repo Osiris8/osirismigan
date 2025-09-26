@@ -6,6 +6,8 @@ import hiretop from "@/public/images/hiretop.png";
 import playerApp from "@/public/images/player-app.png";
 import frontend from "@/public/images/milo-frontend.png";
 import backend from "@/public/images/milo-backend.png";
+import learuma from "@/public/images/learuma.png";
+import learna from "@/public/images/learna.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -25,6 +27,24 @@ interface ProjectType {
 export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
+    {
+      title: "Learna AI",
+      description:
+        "A modern AI-powered chat application built with Flask backend and Next.js frontend, featuring real-time conversations, user authentication, and file upload capabilities.",
+      imageUrl: learna,
+      badges: ["Python", "GroqCloud", "PostgreSql", "Next.js"],
+      codeLink: "https://github.com/Osiris8/learna",
+      demoLink: "https://youtu.be/Obch1QbV_Ys?si=zCLePr40-0X3vw6W",
+    },
+    {
+      title: "Learuma AI",
+      description:
+        "Offline intelligent assistant designed for Humanity. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
+      imageUrl: learuma,
+      badges: ["Python", "Ollama", "GPT OSS 20b", "Sqlite", "Next.js"],
+      codeLink: "https://github.com/Osiris8/learuma-ai",
+      demoLink: "https://youtu.be/otQCjSorqIA?si=NMAEHx0OK82Captc",
+    },
     {
       title: "Milo Backend App",
       description:

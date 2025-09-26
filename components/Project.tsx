@@ -12,7 +12,6 @@ import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import { Card } from "./ui/card";
 
 // Définition de l'interface Project
 interface ProjectType {
@@ -139,7 +138,10 @@ export default function Project() {
       <div className="flex justify-center flex-wrap">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
-            <Card key={index} className="card card-compact w-75 m-2">
+            <div
+              key={index}
+              className="card card-compact w-75 m-2 shadow-sm rounded-lg"
+            >
               <figure>
                 <Image
                   src={project.imageUrl}
@@ -179,7 +181,7 @@ export default function Project() {
                   )}
                 </div>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>

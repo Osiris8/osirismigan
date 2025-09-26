@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="container max-w-2xl mx-auto p-6">
       <div className="flex justify-between items-center mt-10">
         <div className="flex flex-col">
-          <h1 className="text-5xl">Osiris M.</h1>
+          <h1 className="text-5xl">Osiris MIGAN</h1>
           {/*Dark Mode*/}
 
           <p className="text-2xl">

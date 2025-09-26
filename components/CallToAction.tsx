@@ -3,8 +3,8 @@ import { Button } from "./ui/button";
 
 export default function CallToAction() {
   return (
-    <div className="container max-w-2xl mx-auto p-6" id="education">
-      <div className="card w-full bg-base-100 card-xl shadow-sm">
+    <div className="container max-w-2xl mx-auto p-6">
+      <div className="card w-full card-xl shadow-sm">
         <div className="card-body">
           <h2 className="card-title">
             Ready to Bring Your Tech Project to Life?

@@ -38,7 +38,7 @@ export default function Experience() {
       company: "OpenClassrooms",
       role: "Web Developer Mentor",
       logo: oc,
-      dates: "Jan 2020 - Today",
+      dates: "Since 2020",
       details:
         "Support students by analyzing their needs and adapting teaching methods accordingly. Offer perspectives on the profession of web developer and monitor students' motivation to give their best. Monitor learners' progress and alert them to any delays. Helping students to defend their projects.",
       url: "https://openclassrooms.com/fr/",
@@ -56,7 +56,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="container max-w-2xl mx-auto p-6" id="experience">
+    <div className="container max-w-2xl mx-auto p-6">
       <h2 className="text-3xl mb-6 font-bold">Work Experience</h2>
       {experiences.map((exp, index) => (
         <div key={index} className="flex flex-row justify-between mb-6">

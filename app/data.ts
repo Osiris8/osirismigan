@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 
 type Project = {
   name: string;
@@ -114,9 +114,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: "https://github.com/Osiris8",
   },
   {
-    label: "Twitter",
-    icon: Twitter,
-    link: "https://x.com/migan_osiris",
+    label: "Youtube",
+    icon: Youtube,
+    link: "https://www.youtube.com/@codewithosiris",
   },
   {
     label: "LinkedIn",

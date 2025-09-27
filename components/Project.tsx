@@ -50,8 +50,8 @@ export default function Project() {
         "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
       imageUrl: backend,
       badges: ["Python", "Flask", "Neon Database", "Render", "Postman"],
-      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
-      demoLink: "https://milo-brown.vercel.app/login",
+      codeLink: "https://github.com/Osiris8/backend-milo",
+      demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
     },
     {
       title: "Milo Frontend App",
@@ -59,8 +59,8 @@ export default function Project() {
         "Frontend AI assistant app using React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Deploy everything on Vercel. We connect this Frontend with the Backend",
       imageUrl: frontend,
       badges: ["React", "Daisy UI", "Vercel", "Tailwind CSS"],
-      codeLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
-      demoLink: "https://milo-brown.vercel.app/login",
+      codeLink: "https://github.com/Osiris8/frontend-milo",
+      demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
     },
     {
       title: "Todofy App",

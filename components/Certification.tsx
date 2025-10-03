@@ -42,6 +42,19 @@ export default function Certification() {
           </a>
         </div>
       </div>
+
+      <div className="flex flex-col text-left mt-4">
+        <h4 className="text-xl font-semibold">LLMOps</h4>
+        <div className="text-md text-gray-600">
+          <a
+            href="https://learn.deeplearning.ai/accomplishments/325aa8a6-8151-4cf3-ac68-af590b38c775?usp=sharing"
+            className="underline"
+            target="_blank"
+          >
+            DeepLearning AI
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

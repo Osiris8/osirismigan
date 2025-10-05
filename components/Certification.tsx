@@ -54,6 +54,7 @@ export default function Certification() {
             DeepLearning AI
           </a>
         </div>
+        <img src="https://cdn-uploads.huggingface.co/production/uploads/noauth/p0k9aTic2kw-pHuIpx_4t.webp" />
       </div>
     </div>
   );

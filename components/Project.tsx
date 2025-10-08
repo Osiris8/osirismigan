@@ -7,7 +7,8 @@ import playerApp from "@/public/images/player-app.png";
 import frontend from "@/public/images/milo-frontend.png";
 import backend from "@/public/images/milo-backend.png";
 import learuma from "@/public/images/learuma.png";
-import learna from "@/public/images/learna.png";
+
+import huma from "@/public/images/huma.png";
 import todofyApp from "@/public/images/todofy.jpg";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -26,7 +27,7 @@ interface ProjectType {
 export default function Project() {
   // List of project to display
   const projects: ProjectType[] = [
-    {
+    /*{
       title: "Learna AI",
       description:
         "A modern AI-powered chat application built with Flask backend and Next.js frontend, featuring real-time conversations, user authentication, and file upload capabilities.",
@@ -34,13 +35,36 @@ export default function Project() {
       badges: ["Python", "GroqCloud", "PostgreSql", "Next.js"],
       codeLink: "https://github.com/Osiris8/learna",
       demoLink: "https://youtu.be/Obch1QbV_Ys?si=zCLePr40-0X3vw6W",
+    },*/
+    {
+      title: "Huma AI",
+      description:
+        "Online intelligent assistant designed for Humanity. Huma AI aims to bring the power of AI for communities to learn, receive health guidance, improve farming practices, and ask anything..",
+      imageUrl: huma,
+      badges: [
+        "Python",
+        "OpenApi",
+        "PostgreSql",
+        "Next.js",
+        "nomic-ai",
+        "chromadb",
+      ],
+      codeLink: "https://github.com/Osiris8/huma",
+      demoLink: "https://frontend-huma.vercel.app/",
     },
     {
       title: "Learuma AI",
       description:
-        "Offline intelligent assistant designed for Humanity. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
+        "Offline intelligent assistant. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
       imageUrl: learuma,
-      badges: ["Python", "Ollama", "GPT OSS 20b", "Sqlite", "Next.js"],
+      badges: [
+        "Python",
+        "Ollama",
+        "GPT OSS 20b",
+        "Sqlite",
+        "chromadb",
+        "Next.js",
+      ],
       codeLink: "https://github.com/Osiris8/learuma-ai",
       demoLink: "https://youtu.be/otQCjSorqIA?si=NMAEHx0OK82Captc",
     },
@@ -49,7 +73,14 @@ export default function Project() {
       description:
         "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
       imageUrl: backend,
-      badges: ["Python", "Flask", "Neon Database", "Render", "Postman"],
+      badges: [
+        "Python",
+        "Flask",
+        "Neon Database",
+        "GroqCloud",
+        "Render",
+        "Postman",
+      ],
       codeLink: "https://github.com/Osiris8/backend-milo",
       demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
     },
@@ -58,9 +89,9 @@ export default function Project() {
       description:
         "Frontend AI assistant app using React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Deploy everything on Vercel. We connect this Frontend with the Backend",
       imageUrl: frontend,
-      badges: ["React", "Daisy UI", "Vercel", "Tailwind CSS"],
+      badges: ["Vite", "React", "Daisy UI", "Vercel", "Tailwind CSS"],
       codeLink: "https://github.com/Osiris8/frontend-milo",
-      demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      demoLink: "https://frontend-milo.vercel.app/login",
     },
     {
       title: "Todofy App",
@@ -73,10 +104,28 @@ export default function Project() {
         "Drizzle ORM",
         "TailwindCSS",
         "Daisy UI",
-        "Neon Database",
+        "PostgreSql",
       ],
       codeLink: "https://github.com/Osiris8/todofy", // Lien vers le code source supposé
       demoLink: "https://todofy-omega.vercel.app/",
+    },
+    {
+      title: "Hiretop",
+      description:
+        "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
+      imageUrl: hiretop, // Pas d'image fournie, donc vide
+      badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
+      codeLink: "https://github.com/Osiris8/hiretop.git",
+      demoLink: "https://hiretop-iota.vercel.app",
+    },
+    {
+      title: "Makosso Allavo",
+      description:
+        "Creation of the personal website for Makosso Allavo, Food Technology Engineer.",
+      imageUrl: allavo, // Pas d'image fournie, donc vide
+      badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
+      codeLink: "", // Pas de lien de code fourni
+      demoLink: "https://www.makossoallavo.com/",
     },
     {
       title: "OpenTranscriptAI",
@@ -110,25 +159,6 @@ export default function Project() {
       ],
       codeLink: "https://github.com/Osiris8/player-app", // Lien vers le code source supposé
       demoLink: "https://www.youtube.com/watch?v=txeTcmivwuY&t=99s",
-    },
-
-    {
-      title: "Hiretop",
-      description:
-        "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
-      imageUrl: hiretop, // Pas d'image fournie, donc vide
-      badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
-      codeLink: "https://github.com/Osiris8/hiretop.git",
-      demoLink: "https://hiretop-iota.vercel.app",
-    },
-    {
-      title: "Makosso Allavo",
-      description:
-        "Creation of the personal website for Makosso Allavo, Food Technology Engineer.",
-      imageUrl: allavo, // Pas d'image fournie, donc vide
-      badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
-      codeLink: "", // Pas de lien de code fourni
-      demoLink: "https://www.makossoallavo.com/",
     },
   ];
 

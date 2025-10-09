@@ -4,7 +4,7 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
 import playerApp from "@/public/images/player-app.png";
-import milo from "@/public/images/Milo.png";
+import milo from "@/public/images/milo.png";
 import learuma from "@/public/images/learuma.png";
 
 import huma from "@/public/images/huma.png";
@@ -101,8 +101,8 @@ export default function Project() {
         "Render",
         "Postman",
       ],
-      codeLink: "https://github.com/Osiris8/backend-milo",
-      demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
+      codeLink: "https://github.com/Osiris8/milo",
+      demoLink: "https://frontend-milo.vercel.app/login",
     },
 
     {

@@ -53,6 +53,23 @@ export default function Project() {
       demoLink: "https://frontend-huma.vercel.app/",
     },
     {
+      title: "OpenTranscriptAI",
+      description:
+        "OpentranscriptAI is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to deliver fast and accurate transcriptions, helping you make the most of your audiovisual content.",
+      imageUrl: opentranscriptai, // Pas d'image fournie, donc vide
+      badges: [
+        "Next.js",
+        "Typescript",
+
+        "TailwindCSS",
+        "Whisper",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      codeLink: "https://github.com/Osiris8/opentranscriptai-v3",
+      demoLink: "https://www.opentranscriptai.com/",
+    },
+    {
       title: "Learuma AI",
       description:
         "Offline intelligent assistant. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
@@ -127,23 +144,7 @@ export default function Project() {
       codeLink: "", // Pas de lien de code fourni
       demoLink: "https://www.makossoallavo.com/",
     },
-    {
-      title: "OpenTranscriptAI",
-      description:
-        "OpentranscriptAI is an online platform that allows you to easily convert audio or video files into text. Our transcription service uses advanced technology to deliver fast and accurate transcriptions, helping you make the most of your audiovisual content.",
-      imageUrl: opentranscriptai, // Pas d'image fournie, donc vide
-      badges: [
-        "Next.js",
-        "Typescript",
 
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      codeLink: "https://github.com/Osiris8/opentranscriptai", // Lien vers le code source supposé
-      demoLink: "https://www.opentranscriptai.com/",
-    },
     {
       title: "Soccer App",
       description:

@@ -10,8 +10,8 @@ export default function Hero() {
           {/*Dark Mode*/}
 
           <p className="text-2xl">
-            I&#39;m specialized in Machine Learning, Artificial Intelligence,
-            and Software Engineering
+            I&#39;m specialized in Machine Learning, Artificial Intelligence and
+            Software Engineering
           </p>
         </div>
 

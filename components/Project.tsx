@@ -71,6 +71,25 @@ export default function Project() {
     },
 
     {
+      title: "Hiretop",
+      description:
+        "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
+      imageUrl: hiretop, // Pas d'image fournie, donc vide
+      badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
+      codeLink: "https://github.com/Osiris8/hiretop.git",
+      demoLink: "https://hiretop-iota.vercel.app",
+    },
+    {
+      title: "Makosso Allavo",
+      description:
+        "Creation of the personal website for Makosso Allavo, Food Technology Engineer.",
+      imageUrl: allavo, // Pas d'image fournie, donc vide
+      badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
+      codeLink: "", // Pas de lien de code fourni
+      demoLink: "https://www.makossoallavo.com/",
+    },
+
+    {
       title: "Milo Backend App",
       description:
         "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
@@ -126,24 +145,6 @@ export default function Project() {
       ],
       codeLink: "https://github.com/Osiris8/todofy", // Lien vers le code source supposé
       demoLink: "https://todofy-omega.vercel.app/",
-    },
-    {
-      title: "Hiretop",
-      description:
-        "Connecting talent with opportunities. Find your next career opportunity. Stand out and boost your career with Hiretop.",
-      imageUrl: hiretop, // Pas d'image fournie, donc vide
-      badges: ["Next.js", "Typescript", "MongoDB", "TailwindCSS", "Shadcn UI"],
-      codeLink: "https://github.com/Osiris8/hiretop.git",
-      demoLink: "https://hiretop-iota.vercel.app",
-    },
-    {
-      title: "Makosso Allavo",
-      description:
-        "Creation of the personal website for Makosso Allavo, Food Technology Engineer.",
-      imageUrl: allavo, // Pas d'image fournie, donc vide
-      badges: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
-      codeLink: "", // Pas de lien de code fourni
-      demoLink: "https://www.makossoallavo.com/",
     },
 
     {

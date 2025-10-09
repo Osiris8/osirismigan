@@ -69,22 +69,7 @@ export default function Project() {
       codeLink: "https://github.com/Osiris8/opentranscriptai-v3",
       demoLink: "https://www.opentranscriptai.com/",
     },
-    {
-      title: "Learuma AI",
-      description:
-        "Offline intelligent assistant. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
-      imageUrl: learuma,
-      badges: [
-        "Python",
-        "Ollama",
-        "GPT OSS 20b",
-        "Sqlite",
-        "chromadb",
-        "Next.js",
-      ],
-      codeLink: "https://github.com/Osiris8/learuma-ai",
-      demoLink: "https://youtu.be/otQCjSorqIA?si=NMAEHx0OK82Captc",
-    },
+
     {
       title: "Milo Backend App",
       description:
@@ -109,6 +94,22 @@ export default function Project() {
       badges: ["Vite", "React", "Daisy UI", "Vercel", "Tailwind CSS"],
       codeLink: "https://github.com/Osiris8/frontend-milo",
       demoLink: "https://frontend-milo.vercel.app/login",
+    },
+    {
+      title: "Learuma AI",
+      description:
+        "Offline intelligent assistant. It empowers people to learn, receive health guidance, improve farming practices, and ask anything. Powered by GPT-OSS 20B.",
+      imageUrl: learuma,
+      badges: [
+        "Python",
+        "Ollama",
+        "GPT OSS 20b",
+        "Sqlite",
+        "chromadb",
+        "Next.js",
+      ],
+      codeLink: "https://github.com/Osiris8/learuma-ai",
+      demoLink: "https://youtu.be/otQCjSorqIA?si=NMAEHx0OK82Captc",
     },
     {
       title: "Todofy App",

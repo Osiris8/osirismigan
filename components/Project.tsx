@@ -4,8 +4,7 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
 import playerApp from "@/public/images/player-app.png";
-import frontend from "@/public/images/milo-frontend.png";
-import backend from "@/public/images/milo-backend.png";
+import milo from "@/public/images/Milo.png";
 import learuma from "@/public/images/learuma.png";
 
 import huma from "@/public/images/huma.png";
@@ -90,10 +89,10 @@ export default function Project() {
     },
 
     {
-      title: "Milo Backend App",
+      title: "Milo",
       description:
-        "Backend AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Test it with Postman and deploy everything on Render",
-      imageUrl: backend,
+        "Fullstack AI assistant app using Flask, React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more.",
+      imageUrl: milo,
       badges: [
         "Python",
         "Flask",
@@ -105,15 +104,7 @@ export default function Project() {
       codeLink: "https://github.com/Osiris8/backend-milo",
       demoLink: "https://youtu.be/_PZHRUFZDpE?si=9XZ5rflmk3rJEZsN",
     },
-    {
-      title: "Milo Frontend App",
-      description:
-        "Frontend AI assistant app using React, JWT authentication, and powerful Groq Cloud AI models like Mistral, Gemma, LLaMA, and more. Deploy everything on Vercel. We connect this Frontend with the Backend",
-      imageUrl: frontend,
-      badges: ["Vite", "React", "Daisy UI", "Vercel", "Tailwind CSS"],
-      codeLink: "https://github.com/Osiris8/frontend-milo",
-      demoLink: "https://frontend-milo.vercel.app/login",
-    },
+
     {
       title: "Learuma AI",
       description:

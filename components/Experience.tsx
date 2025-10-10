@@ -6,18 +6,16 @@ import sens1 from "@/public/images/sens1.png";
 import { useState } from "react";
 
 export default function Experience() {
-  // Initial State 'number | null'
   const [stateIsOpen, setStateIsOpen] = useState<number | null>(null);
 
-  // Change the state when it's cliqued
   const toggleDetails = (index: number) => {
-    setStateIsOpen(stateIsOpen === index ? null : index); // If the same index, close this experience
+    setStateIsOpen(stateIsOpen === index ? null : index);
   };
 
   interface ExperienceType {
     company: string;
     role: string;
-    logo: StaticImageData; // Type for Next.js Images
+    logo: StaticImageData;
     dates: string;
     details: string;
     url: string;

@@ -4,7 +4,7 @@ import allavo from "@/public/images/allavo.png";
 import opentranscriptai from "@/public/images/opentranscriptai.png";
 import hiretop from "@/public/images/hiretop.png";
 import soccerApp from "@/public/images/soccer-app.png";
-import milo from "@/public/images/milo.png";
+import milo from "@/public/images/milo.jpg";
 import learuma from "@/public/images/learuma.png";
 
 import huma from "@/public/images/huma.png";

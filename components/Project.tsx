@@ -90,8 +90,8 @@ export default function Project() {
         "Kinde Authentification",
         "Shadcn UI",
       ],
-      codeLink: "https://github.com/Osiris8/player-app",
-      demoLink: "https://www.youtube.com/watch?v=txeTcmivwuY&t=99s",
+      codeLink: "https://github.com/Osiris8/soccer-app",
+      demoLink: "https://soccer-app-ruddy.vercel.app",
     },
     {
       title: "Todofy App",

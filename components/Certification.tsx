@@ -54,13 +54,13 @@ export default function Certification() {
             DeepLearning AI
           </a>
         </div>
-        <br />
+      {/*  <br />
         <img src="https://cdn-uploads.huggingface.co/production/uploads/noauth/p0k9aTic2kw-pHuIpx_4t.webp" />
         <br />
         <img
           src="https://huggingface-course-unit-3-quiz.hf.space/gradio_api/file=/tmp/gradio/84ee44f40398db7c90040b4d57382b39435763cd291eef4884d5a7fad2b214bb/image.webp"
           alt=""
-        />
+        />*/}
       </div>
     </div>
   );

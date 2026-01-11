@@ -64,7 +64,7 @@ export default function Project() {
         "Magic UI",
       ],
       codeLink: "https://github.com/Osiris8/opentranscriptai-v3",
-      demoLink: "https://www.opentranscriptai.com/",
+      demoLink: "https://opentranscriptai-v3.vercel.app/",
     },
 
     {
